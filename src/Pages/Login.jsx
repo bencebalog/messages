@@ -4,6 +4,7 @@ import { Button, TextField } from '@mui/material'
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
+
 export default function Login({auth, setUser}) {
 
   const [email, setEmail] = useState("");
@@ -24,8 +25,12 @@ export default function Login({auth, setUser}) {
     }
   }
 
+  function enter(e){
+    if(e.key=='Enter') login();
+  }
+
   return (
-    <div className='login'>
+    <div className='login' onKeyDown={e =>enter(e)}>
       <TextField
         error={loginError}
         required

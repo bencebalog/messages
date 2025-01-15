@@ -6,7 +6,6 @@ export default function About() {
         <p><b>Messages v1.0.0</b></p>
         <p>
           temus gmail oldal
-          <ul></ul>
         </p>
     </div>
   )

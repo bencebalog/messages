@@ -38,3 +38,6 @@ button{
 .uzenet{
   display: flex;gap: 15px;
 }
+.menu .admin{
+  margin-left: 10px;
+}

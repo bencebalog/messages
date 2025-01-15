@@ -20,6 +20,7 @@ export default function Messages({user, db}) {
 
   async function send() {
     await addDoc(collection(db, "messages"), {ki:user.email,kinek:kinek,uzenet:uz,mikor:Timestamp.now().toDate()});
+    setKinek("");setUz("");
   }
 
   return (
