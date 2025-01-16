@@ -19,7 +19,7 @@ export default function Users({db}) {
   return (
     <div className='users'>
       <ul>
-        {users.map(x =>  <li key={x.id}>{x.nev} ({x.email})</li>)}
+        {users.map(x =>  <li key={x.id}>{x.nev}  ({x.email})</li>)}
       </ul>
     </div>
   )
